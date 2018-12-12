@@ -51,22 +51,22 @@ public class SecondActivity extends AppCompatActivity {
 
                 if (foodItem[0].equals("No Item")) {
                     myRef.child("food1").setValue(text);
-                } else if (foodItem[2].equals("No Item")) {
+                } else if (foodItem[1].equals("No Item")) {
                     myRef.child("food2").setValue(text);
-                } else if (foodItem[4].equals("No Item")) {
+                } else if (foodItem[2].equals("No Item")) {
                     myRef.child("food3").setValue(text);
-                } else if (foodItem[6].equals("No Item")) {
+                } else if (foodItem[3].equals("No Item")) {
                     myRef.child("food4").setValue(text);
-                } else if (foodItem[8].equals("No Item")) {
+                } else if (foodItem[4].equals("No Item")) {
                     myRef.child("food5").setValue(text);
                 }
-                if (foodItem[1].equals("No Date")) {
+                if (foodItem[5].equals("No Date")) {
                     myRef.child("time1").setValue(t);
-                } else if (foodItem[3].equals("No Date")) {
-                    myRef.child("time1").setValue(t);
-                } else if (foodItem[5].equals("No Date")) {
-                    myRef.child("time3").setValue(t);
+                } else if (foodItem[6].equals("No Date")) {
+                    myRef.child("time2").setValue(t);
                 } else if (foodItem[7].equals("No Date")) {
+                    myRef.child("time3").setValue(t);
+                } else if (foodItem[8].equals("No Date")) {
                     myRef.child("time4").setValue(t);
                 } else if (foodItem[9].equals("No Date")) {
                     myRef.child("time5").setValue(t);

@@ -152,6 +152,17 @@ public class FridgeView extends Activity {
                 Log.w("error", "loadPost:onCancelled", databaseError.toException());
             }
         });
+        time5.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                text10  .setText(dataSnapshot.getValue().toString());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.w("error", "loadPost:onCancelled", databaseError.toException());
+            }
+        });
         Button remove1 = (Button) findViewById(R.id.button3);
         remove1.setOnClickListener(new View.OnClickListener() {
             @Override
